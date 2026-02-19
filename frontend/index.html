@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/wails.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Rubberduck AI</title>
+</head>
+
+<body>
+    <div class="chat-app">
+        <header class="chat-header">
+            <h1>Rubberduck AI</h1>
+            <p class="subtitle">智能对话助手</p>
+        </header>
+        <main class="chat-main">
+            <div class="messages" id="messages">
+                <div class="message assistant">
+                    <div class="avatar">🦆</div>
+                    <div class="bubble">
+                        <p>你好！我是 Rubberduck，有什么可以帮你的吗？</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <textarea id="userInput" placeholder="输入消息..." rows="1" autocomplete="off"></textarea>
+                <button class="send-btn" id="sendBtn" aria-label="发送">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
